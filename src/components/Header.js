@@ -2,8 +2,8 @@ import React from "react";
 
 export const Header = () => {
   return (
-    <div>
-      <h1>Todo List</h1>
-    </div>
+    <section className="section">
+      <h1 className="title">Todo List</h1>
+    </section>
   );
 };
