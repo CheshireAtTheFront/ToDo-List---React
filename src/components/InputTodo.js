@@ -1,17 +1,27 @@
 import React from "react";
 
-export const InputTodo = () => {
+export const InputTodo = (props) => {
   return (
-    <div className="section">
+    <section className="section">
       <div className="container">
-        <input
-          type="text"
-          name="value"
-          placeholder="Добавить задачу..."
-          className="input"
-        />
-        <button className="add-button">Добавить</button>
+        <div className="block container__block">
+          <input
+            type="text"
+            name="value"
+            placeholder="Добавить задачу..."
+            className="block__input"
+            value={props.todo}
+            onChange={(e) => props.setTodo(e.target.value)}
+          />
+          <button
+            className={!props.todo.trim() ? "block__add-button" : "active"}
+            onClick={() => (props.todo.trim() ? props.addTask() : false)}
+            // disabled={!props.todo}
+          >
+            Добавить
+          </button>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
