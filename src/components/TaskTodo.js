@@ -22,7 +22,7 @@ export const TaskTodo = (props) => {
             {props.value}
           </p>
           <img
-            src={"img/basket.svg"}
+            src={process.env.PUBLIC_URL + "/image/basket.svg"}
             alt="basket"
             onClick={() => props.deleteTask(props.id)}
             className="block__btn-basket"
