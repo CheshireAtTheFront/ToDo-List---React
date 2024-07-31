@@ -1,0 +1,189 @@
+/* main */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.App {
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main {
+  padding-bottom: 50px;
+  width: 100%;
+  min-height: 200px;
+}
+
+.section {
+  width: 100%;
+}
+
+.container {
+  padding: 0 20px;
+  width: 100%;
+  max-width: 545px;
+}
+
+.block {
+  align-items: end;
+}
+
+.main,
+.section,
+.block,
+.block-buttons {
+  display: flex;
+}
+
+.main,
+.block-buttons {
+  flex-direction: column;
+}
+
+.main,
+.section {
+  justify-content: center;
+}
+
+.block,
+.block-buttons {
+  justify-content: space-between;
+}
+
+/* Header */
+.section-title {
+  height: 100px;
+}
+
+.section-title__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  max-width: 505px;
+  width: 100%;
+  height: inherit;
+  background-color: rgba(239, 239, 239, 0.941);
+  border-bottom: 4px ridge #adadad;
+}
+
+/* .section-title__block {
+  margin-top: 65px;
+} */
+
+/* Buttons */
+.block-buttons {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  align-items: start;
+  height: 85px;
+}
+
+.block-buttons__btn {
+  padding: 3px;
+  border: 1px solid rgb(118, 221, 245);
+}
+
+/* InputTodo */
+.block__input {
+  margin-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+  max-width: 430px;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.block__input,
+.block__add-button,
+.active {
+  height: 30px;
+}
+
+.block__add-button,
+.active {
+  width: 100%;
+  max-width: 100px;
+  border: 1px solid rgb(118, 221, 245);
+}
+
+.block__add-button {
+  background: linear-gradient(
+    42deg,
+    rgba(118, 221, 245, 0.531) 0%,
+    rgba(9, 9, 121, 0.531) 65%,
+    rgba(118, 222, 245, 0.531) 100%
+  );
+  color: #3e3e3e;
+}
+
+.active,
+.block-buttons__btn {
+  background: linear-gradient(
+    42deg,
+    rgba(118, 221, 245, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(118, 221, 245, 1) 100%
+  );
+  color: #ffffff;
+}
+
+.active:active {
+  transform: scale(0.98);
+}
+
+/* TaskTodo */
+.container__block {
+  margin: 30px auto 0 0;
+}
+
+.block__checkbox,
+.block__btn-basket {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.block__btn-basket {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.active:active:active,
+.block__btn-basket:active {
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.82);
+  -moz-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.82);
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.82);
+}
+
+.block__text {
+  margin: 0 10px;
+  max-width: 430px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+
+@media (max-width: 390px) {
+  .section-title__container {
+    justify-content: end;
+    padding: 0 20px;
+  }
+
+  .block-buttons {
+    left: 20px;
+  }
+}
