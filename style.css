@@ -22,10 +22,25 @@ button {
   width: 100%;
   max-width: 600px;
   min-height: 200px;
+  height: 500px;
   border: 1px solid green;
   border-radius: 10px;
   background-color: rgb(90 215 255);
   /* background-color: rgba(0, 136, 179, 0.239); */
+}
+
+.main-section {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff transparent;
+}
+
+.main-section::-webkit-scrollbar {
+  width: 15px;
+}
+
+.main-section::-webkit-scrollbar-track {
+  scrollbar-color: #ffffff transparent;
 }
 
 .section {
@@ -85,7 +100,7 @@ button {
 .block-buttons {
   position: absolute;
   top: 20px;
-    left: 20px;
+  left: 20px;
   align-items: start;
   height: 85px;
 }
