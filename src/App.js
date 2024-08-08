@@ -113,8 +113,10 @@ function App() {
     <div className="App">
       <main className="main">
         <Header setDone={setDone} />
-        <InputTodo addTask={addTask} input={input} setInput={setInput} />
-        {taskTodoList}
+        <div className="main-section">
+          <InputTodo addTask={addTask} input={input} setInput={setInput} />
+          {taskTodoList}
+        </div>
       </main>
     </div>
   );
