@@ -16,9 +16,14 @@ button {
 }
 
 .main {
-  padding-bottom: 50px;
+  margin: 50px auto 0;
+  padding: 50px 0;
   width: 100%;
+  max-width: 600px;
   min-height: 200px;
+  border: 1px solid green;
+  border-radius: 10px;
+  background-color: rgba(0, 136, 179, 0.239);
 }
 
 .section {
@@ -28,7 +33,7 @@ button {
 .container {
   padding: 0 20px;
   width: 100%;
-  max-width: 545px;
+  max-width: 580px;
 }
 
 .block {
@@ -66,8 +71,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  max-width: 505px;
+  position: relative;
+  max-width: 540px;
   width: 100%;
   height: inherit;
   background-color: rgba(239, 239, 239, 0.941);
@@ -102,9 +107,14 @@ button {
 }
 
 .block__input,
+.block__text {
+  font-size: 16px;
+}
+
+.block__input,
 .block__add-button,
 .active {
-  height: 30px;
+  height: 35px;
 }
 
 .block__add-button,
@@ -144,17 +154,24 @@ button {
   margin: 30px auto 0 0;
 }
 
+.block__icon-pencil,
+.block__icon-change {
+  margin-left: 10px;
+}
+
 .block__checkbox,
-.block__btn-basket {
-  width: 20px;
-  height: 20px;
+.block__icon-pencil,
+.block__btn-basket,
+.block__icon-change {
+  width: 24px;
+  height: 24px;
   cursor: pointer;
 }
 
 .block__btn-basket {
   width: 30px;
   height: 30px;
-  background-color: #ffffff;
+  background-color: transparent;
   border: none;
 }
 
@@ -170,7 +187,11 @@ button {
   max-width: 430px;
   width: 100%;
   text-align: center;
+  font-size: 16px;
+  outline: none;
+  border: none;
   border-bottom: 1px solid grey;
+  background-color: transparent;
 }
 
 @media (max-width: 390px) {
