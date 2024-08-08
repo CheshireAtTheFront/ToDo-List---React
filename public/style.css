@@ -11,19 +11,21 @@ button {
 }
 
 .App {
+  padding: 0 20px;
   font-size: 16px;
   font-family: "Courier New", Courier, monospace;
 }
 
 .main {
-  margin: 50px auto 0;
-  padding: 50px 0;
+  margin: 20px auto 20px;
+  padding-bottom: 20px;
   width: 100%;
   max-width: 600px;
   min-height: 200px;
   border: 1px solid green;
   border-radius: 10px;
-  background-color: rgba(0, 136, 179, 0.239);
+  background-color: rgb(90 215 255);
+  /* background-color: rgba(0, 136, 179, 0.239); */
 }
 
 .section {
@@ -33,7 +35,7 @@ button {
 .container {
   padding: 0 20px;
   width: 100%;
-  max-width: 580px;
+  max-width: 600px;
 }
 
 .block {
@@ -64,7 +66,7 @@ button {
 
 /* Header */
 .section-title {
-  height: 100px;
+  height: 120px;
 }
 
 .section-title__container {
@@ -72,18 +74,18 @@ button {
   justify-content: center;
   align-items: center;
   position: relative;
-  max-width: 540px;
   width: 100%;
   height: inherit;
   background-color: rgba(239, 239, 239, 0.941);
   border-bottom: 4px ridge #adadad;
+  border-radius: 10px;
 }
 
 /* Buttons */
 .block-buttons {
   position: absolute;
-  top: 7px;
-  left: 7px;
+  top: 20px;
+    left: 20px;
   align-items: start;
   height: 85px;
 }
