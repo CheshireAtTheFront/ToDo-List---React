@@ -10,13 +10,12 @@ export const InputTodo = (props) => {
             name="value"
             placeholder="Добавить задачу..."
             className="block__input"
-            value={props.todo}
-            onChange={(e) => props.setTodo(e.target.value)}
+            value={props.input}
+            onChange={(e) => props.setInput(e.target.value)}
           />
           <button
-            className={!props.todo.trim() ? "block__add-button" : "active"}
-            onClick={() => (props.todo.trim() ? props.addTask() : false)}
-            // disabled={!props.todo}
+            className={!props.input ? "block__add-button" : "active"}
+            onClick={() => (props.input.trim() ? props.addTask() : false)}
           >
             Добавить
           </button>
