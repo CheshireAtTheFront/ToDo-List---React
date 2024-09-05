@@ -6,7 +6,6 @@ export const TaskTodo = ({
   status,
   deleteTask,
   toggleTask,
-  // setEditTodo,
   btnChange,
   editTodo,
   editingText,
@@ -36,7 +35,6 @@ export const TaskTodo = ({
               alt="pencil"
               className="block__icon-pencil"
               onClick={() => btnChange(id)}
-              // onClick={() => setEditTodo(id)}
             />
           )}
 
