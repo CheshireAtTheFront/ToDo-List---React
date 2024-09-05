@@ -43,6 +43,7 @@ function App() {
 
   const btnChange = (id) => {
     setEditTodo(id);
+
     copiTasks.map((item) => {
       return item.id === id
         ? { ...item, value: setEditingText(item.value) }
